@@ -13,7 +13,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.route("/").get((req, res) => {
-  res.sendFile(process.cwd() + "/views/pug/index.html");
+  res.sendFile(process.cwd() + "/views/pug/index.pug");
 });
 
 app.listen(process.env.PORT || 3000, () => {
